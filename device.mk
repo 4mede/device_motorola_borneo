@@ -7,6 +7,8 @@
 $(call inherit-product, device/motorola/sm6225-common/common.mk)
 
 # A/B
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota_retrofit.mk)
+
 AB_OTA_PARTITIONS += \
     recovery
 
