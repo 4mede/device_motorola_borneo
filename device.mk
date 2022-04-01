@@ -47,7 +47,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 # Signing
-$(call inherit-product, vendor/halcyon-priv/config/common.mk)
+$(call inherit-product, vendor/pixelos-priv/config/common.mk)
 
 # GApps
 $(call inherit-product-if-exists, vendor/google/gms/gms-vendor.mk)
