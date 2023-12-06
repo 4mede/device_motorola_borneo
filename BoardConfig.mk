@@ -33,10 +33,6 @@ KERNEL_DEFCONFIG := borneo_defconfig
 # OTA Assert
 TARGET_OTA_ASSERT_DEVICE := borneo
 
-# Kernel Modules - Recovery
-BOARD_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
-RECOVERY_KERNEL_MODULES := $(BOARD_RECOVERY_KERNEL_MODULES_LOAD)
-
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 102400000
 
