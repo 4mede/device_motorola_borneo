@@ -27,7 +27,8 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.oem.fingerprint.sh \
     init.oem.fingerprint2.sh \
-    init.mmi.overlay.rc
+    init.mmi.overlay.rc \
+    init.recovery.touch.rc
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
