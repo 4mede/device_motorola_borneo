@@ -23,7 +23,8 @@ TARGET_BOOT_ANIMATION_RES := 720
 # FM
 PRODUCT_PACKAGES += \
     libqcomfm_jni \
-    qcom.fmradio
+    qcom.fmradio \
+    motorola.hardware.fmradio
   
 PRODUCT_BOOT_JARS += qcom.fmradio
 
