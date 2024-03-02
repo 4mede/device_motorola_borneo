@@ -17,6 +17,9 @@ $(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="b"
 
+ # Inherit from ViPER4AndroidFX
+ $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aicp_borneo
 PRODUCT_DEVICE := borneo
