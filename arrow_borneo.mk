@@ -14,6 +14,9 @@ $(call inherit-product, device/motorola/borneo/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/arrow/config/common.mk)
 
+# Inherit from ViPER4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := arrow_borneo
 PRODUCT_DEVICE := borneo
