@@ -10,11 +10,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/motorola/borneo/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Android Ice Cold Project stuff.
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="José Gustavo 🌽 (josexda)"
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_borneo
+PRODUCT_NAME := aicp_borneo
 PRODUCT_DEVICE := borneo
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g power (2021)

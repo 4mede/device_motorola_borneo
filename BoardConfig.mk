@@ -22,6 +22,7 @@ TARGET_SCREEN_DENSITY := 280
 ODM_MANIFEST_SKUS += b f
 ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/sku/manifest_b.xml
 ODM_MANIFEST_F_FILES := $(DEVICE_PATH)/sku/manifest_f.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/aicp/config/device_framework_matrix.xml
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
