@@ -10,10 +10,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/motorola/borneo/device.mk)
 
-<<<<<<< HEAD:halcyon_borneo.mk
 # Inherit some common Halcyon Project stuff.
 $(call inherit-product, vendor/halcyon/config/common.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES := 720
 
 # Inherit from ViPER4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)

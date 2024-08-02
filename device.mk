@@ -29,7 +29,7 @@ PRODUCT_PACKAGES += \
     init.recovery.touch.rc
 
 # Moto Camera 3
-TARGET_MOTCAMERA3 := {device_codename}
+TARGET_MOTCAMERA3 := borneo
 TARGET_USES_MOTCAMERA3 := true
 
 $(call inherit-product, vendor/motorola/MotCamera3/motcamera3.mk)
