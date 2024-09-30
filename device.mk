@@ -28,6 +28,11 @@ PRODUCT_PACKAGES += \
     init.oem.fingerprint2.sh \
     init.mmi.overlay.rc \
     init.recovery.touch.rc
+    
+# Moto Camera 3
+TARGET_MOTCAMERA3 := borneo
+
+$(call inherit-product, vendor/motorola/MotCamera3/motcamera3.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
