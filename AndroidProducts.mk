@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pixelage_borneo.mk
+    $(LOCAL_DIR)/halcyon_borneo.mk
