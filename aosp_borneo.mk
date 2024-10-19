@@ -10,15 +10,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/motorola/borneo/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 720
-
-# Inherit from ViPER4AndroidFX
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
-
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_borneo
+PRODUCT_NAME := halcyon_borneo
 PRODUCT_DEVICE := borneo
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g power (2021)
