@@ -21,25 +21,26 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
-# Rootdir
+# Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.qcom.ramdisk \
     init.oem.fingerprint.sh \
     init.oem.fingerprint2.sh \
     init.mmi.overlay.rc \
     init.recovery.touch.rc
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 29
 PRODUCT_SHIPPING_API_LEVEL := 29
 
-# Ramdisk
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom_ramdisk:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/borneo/borneo-vendor.mk)
