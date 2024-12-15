@@ -14,7 +14,7 @@ $(call inherit-product, device/motorola/borneo/device.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_borneo
+PRODUCT_NAME := aosp_borneo
 PRODUCT_DEVICE := borneo
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g power (2021)
@@ -23,6 +23,3 @@ PRODUCT_MANUFACTURER := motorola
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="borneo_retail-user 11 RZBS31.Q2-143-27-25 418ef release-keys" \
-    BuildFingerprint=motorola/borneo_retail/borneo:11/RZBS31.Q2-143-27-25/418ef:user/release-keys \
-    DeviceProduct=borneo_retail
