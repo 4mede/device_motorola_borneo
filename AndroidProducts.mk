@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_borneo.mk
+    $(LOCAL_DIR)/yaap_borneo.mk
