@@ -47,5 +47,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+#Thermal
+$(call soong_config_set,qti_thermal,netlink,false)
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/borneo/borneo-vendor.mk)
