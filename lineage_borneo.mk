@@ -13,6 +13,9 @@ $(call inherit-product, device/motorola/borneo/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Sakura Flags
+SAKURA_MAINTAINER := b
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_borneo
 PRODUCT_DEVICE := borneo

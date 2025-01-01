@@ -37,6 +37,9 @@ PRODUCT_PACKAGES += \
 BOARD_SHIPPING_API_LEVEL := 29
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+#Signing
+$(call inherit-product, vendor/lineage-priv/keys/config.mk)
+
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom_ramdisk:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
