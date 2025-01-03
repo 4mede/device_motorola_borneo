@@ -18,7 +18,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
 # Boot animation
-TARGET_BOOT_ANIMATION_RES := 720
+TARGET_SCREEN_HEIGHT := 1600
+TARGET_SCREEN_WIDTH := 720
 
 # Init
 PRODUCT_PACKAGES += \
@@ -39,6 +40,9 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+
+#Signing
+$(call inherit-product, vendor/derp/signing/keys/common.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
