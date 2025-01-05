@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/motorola/borneo/device.mk)
 
-# Inherit some common HalogenOS stuff.
+# Inherit some common Flare stuff.
 $(call inherit-product, vendor/flare/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
