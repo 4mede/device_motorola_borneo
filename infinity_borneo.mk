@@ -28,3 +28,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="borneo_retail-user 11 RZBS31.Q2-143-27-25 418ef release-keys" \
     BuildFingerprint=motorola/borneo_retail/borneo:11/RZBS31.Q2-143-27-25/418ef:user/release-keys \
     DeviceProduct=borneo_retail
+
+# Infinity-X Flags
+WITH_GMS := false
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := b
+TARGET_HAS_UDFPS := false
+TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_IS_PIXEL := false
+TARGET_EXCLUDES_AUDIOFX := false
+TARGET_EXCLUDES_VIA := true
