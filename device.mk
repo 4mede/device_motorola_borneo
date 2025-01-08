@@ -41,6 +41,9 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
+#Signing
+$(call inherit-product, vendor/flare/signing/keys/common.mk)
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
