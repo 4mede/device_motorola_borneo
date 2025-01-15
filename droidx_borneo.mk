@@ -10,17 +10,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/motorola/borneo/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common DroidX-UI stuff.
+$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_borneo
+PRODUCT_NAME := droidx_borneo
 PRODUCT_DEVICE := borneo
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g power (2021)
 PRODUCT_MANUFACTURER := motorola
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
+# Boot animaton
+TARGET_BOOT_ANIMATION_RES := 720
+
+# DroidX-UI additions
+DROIDX_BUILD_TYPE := UNOFFICIAL
+DROIDX_GAPPS := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="borneo_retail-user 11 RZBS31.Q2-143-27-25 418ef release-keys" \
