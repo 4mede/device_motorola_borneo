@@ -29,6 +29,9 @@ PRODUCT_PACKAGES += \
     init.mmi.overlay.rc \
     init.recovery.touch.rc
 
+# NetLink
+$(call soong_config_set,qti_thermal,netlink,false)
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
@@ -40,6 +43,9 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+
+#Signing
+$(call inherit-product, vendor/yaap-priv/config/common.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
