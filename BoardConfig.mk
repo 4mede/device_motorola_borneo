@@ -30,17 +30,6 @@ TARGET_KERNEL_CONFIG += vendor/ext_config/borneo-default.config
 # Kernel Modules - Recovery
 BOARD_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
 RECOVERY_KERNEL_MODULES := $(BOARD_RECOVERY_KERNEL_MODULES_LOAD)
-# Kernel Modules - vendor_dlkm partition
-BOARD_USES_VENDOR_DLKMIMAGE := true
-BOARD_MOTO_DYNAMIC_PARTITIONS_PARTITION_LIST += vendor_dlkm
-BOARD_VENDOR_DLKMIMAGE_FILE_SYSTEM_TYPE := ext4
-TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
-AB_OTA_PARTITIONS += vendor_dlkm
-
-# Kernel Modules - Vendor Boot
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/vendor_boot.modules.load))
-BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)
->>>>>>> 0bb13ec (devon: Switch to /vendor_dlkm for kernel modules)
 
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 102400000
