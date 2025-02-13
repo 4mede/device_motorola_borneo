@@ -9,6 +9,7 @@ LOCAL_OVERRIDES_PACKAGES := \
    Twelve \
    Jelly \
    Glimpse \
+   Camelot
 
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
