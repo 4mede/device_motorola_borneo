@@ -53,10 +53,6 @@ PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 # GApps
 $(call inherit-product-if-exists, vendor/google/gms/gms-vendor.mk)
 
-# RemovePackages
-PRODUCT_PACKAGES += \
-    RemovePackages \
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
