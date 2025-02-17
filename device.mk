@@ -46,12 +46,8 @@ PRODUCT_COPY_FILES += \
 
 # Signing
 $(call inherit-product, vendor/cr/signing/keys/keys.mk)
-
 # Prebuilts
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
-
-# GApps
-$(call inherit-product-if-exists, vendor/google/gms/gms-vendor.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
