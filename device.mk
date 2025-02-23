@@ -41,5 +41,8 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom_ramdisk:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
+# Signing
+$(call inherit-product, vendor/aicp/signing/keys/keys.mk)
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/borneo/borneo-vendor.mk)

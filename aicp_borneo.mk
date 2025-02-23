@@ -15,7 +15,7 @@ $(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="José Gustavo 🌽 (josexda)"
+    DEVICE_MAINTAINERS="b"
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aicp_borneo
