@@ -28,6 +28,12 @@ PRODUCT_PACKAGES += \
     init.mmi.overlay.rc \
     init.recovery.touch.rc
 
+# Moto Camera 3
+TARGET_MOTCAMERA3 := {device_codename}
+TARGET_USES_MOTCAMERA3 := true
+
+$(call inherit-product, vendor/motorola/MotCamera3/motcamera3.mk)
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
