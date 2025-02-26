@@ -18,6 +18,9 @@ TARGET_BOOTLOADER_BOARD_NAME := borneo
 # Display
 TARGET_SCREEN_DENSITY := 280
 
+# Duplicates
+BUILD_BROKEN_DUP_RULES := true
+
 # HIDL
 ODM_MANIFEST_SKUS += b f
 ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/sku/manifest_b.xml
