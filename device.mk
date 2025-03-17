@@ -17,9 +17,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
-# Boot animation
-TARGET_BOOT_ANIMATION_RES := 720
-
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -47,7 +44,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 # Signing
-$(call inherit-product, vendor/pixelos-priv/config/common.mk)
+$(call inherit-product, vendor/aospa-priv/config/common.mk)
 
 # GApps
 $(call inherit-product-if-exists, vendor/google/gms/gms-vendor.mk)

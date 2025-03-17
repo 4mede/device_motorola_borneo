@@ -157,6 +157,8 @@ vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/libets_fp_et5.so
 vendor/lib64/libets_teeclient.so
 vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so
+system/lib/android.hardware.biometrics.fingerprint@2.1.so
+system/lib64/android.hardware.biometrics.fingerprint@2.1.so
 
 # Graphics (Adreno firmware)
 vendor/firmware/a630_sqe.fw
