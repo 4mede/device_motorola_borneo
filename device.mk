@@ -19,10 +19,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
-PRODUCT_PACKAGES += \
-android.hardware.biometrics.fingerprint@2.1 \
-android.hardware.biometrics.fingerprint@2.1.vendor
-
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -48,12 +44,6 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
-
-# Signing
-$(call inherit-product, vendor/aospa-priv/config/common.mk)
-
-# GApps
-$(call inherit-product-if-exists, vendor/google/gms/gms-vendor.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
