@@ -10,12 +10,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/motorola/borneo/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Axion stuff.
+TARGET_DISABLE_EPPE := true
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Inherit from ViPER4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
+# Axion FLags
+AXION_CAMERA_REAR_INFO := 48, 2, 2
+AXION_CAMERA_FRONT_INFO := 8
+AXION_MAINTAINER := b
+AXION_PROCESSOR := Snapdragon_662
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_borneo
