@@ -15,9 +15,6 @@ TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 
-# Inherit from ViPER4AndroidFX
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
-
 # Axion FLags
 AXION_CAMERA_REAR_INFO := 48, 2, 2
 AXION_CAMERA_FRONT_INFO := 8
