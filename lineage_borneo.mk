@@ -16,7 +16,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Axion FLags
-AXION_CAMERA_REAR_INFO := 48, 2, 2
+AXION_CAMERA_REAR_INFO := 48,2,2
 AXION_CAMERA_FRONT_INFO := 8
 AXION_MAINTAINER := b
 AXION_PROCESSOR := Snapdragon_662
