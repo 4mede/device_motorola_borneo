@@ -11,18 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/borneo/device.mk)
 
 # Inherit some common Axion stuff.
-TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 
-# Axion FLags
-AXION_CAMERA_REAR_INFO := 48,2,2
-AXION_CAMERA_FRONT_INFO := 8
-AXION_MAINTAINER := b
-AXION_PROCESSOR := Snapdragon_662
-
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_borneo
+PRODUCT_NAME := droidx_borneo
 PRODUCT_DEVICE := borneo
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g power (2021)

@@ -47,12 +47,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Prebuilt
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/motorola/borneo/prebuilt/product,product) \
     $(call find-copy-subdir-files,*,device/motorola/borneo/prebuilt/permissions,product/etc/permissions) \
-    $(call find-copy-subdir-files,*,device/motorola/borneo/prebuilt/system_ext,system_ext) \
 
 AB_OTA_PARTITIONS += \
-    system_ext \
     product
 
 # Shipping API level
