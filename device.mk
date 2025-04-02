@@ -20,6 +20,13 @@ PRODUCT_COPY_FILES += \
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
 
+# Fm
+PRODUCT_PACKAGES += \
+     libqcomfm_jni \
+     qcom.fmradio
+ 
+ PRODUCT_BOOT_JARS += qcom.fmradio
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -37,6 +44,16 @@ $(call inherit-product, vendor/motorola/MotCamera3/motcamera3.mk)
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
+
+# Prebuilt
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,device/motorola/borneo/prebuilt/product,product) \
+    $(call find-copy-subdir-files,*,device/motorola/borneo/prebuilt/permissions,product/etc/permissions) \
+    $(call find-copy-subdir-files,*,device/motorola/borneo/prebuilt/system_ext,system_ext) \
+
+AB_OTA_PARTITIONS += \
+    system_ext \
+    product
 
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 29
