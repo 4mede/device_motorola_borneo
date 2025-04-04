@@ -158,6 +158,10 @@ vendor/lib64/libets_fp_et5.so
 vendor/lib64/libets_teeclient.so
 vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so
 
+# FM
+system_ext/app/FMRadioService/FMRadioService.apk
+product/priv-app/FMPlayer/FMPlayer.apk
+
 # Graphics (Adreno firmware)
 vendor/firmware/a630_sqe.fw
 
