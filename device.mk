@@ -42,10 +42,10 @@ PRODUCT_PACKAGES += \
     init.recovery.touch.rc
 
 # Moto Camera 3
-TARGET_MOTCAMERA3 := borneo
-TARGET_USES_MOTCAMERA3 := true
+#TARGET_MOTCAMERA3 := borneo
+#TARGET_USES_MOTCAMERA3 := true
 
-$(call inherit-product, vendor/motorola/MotCamera3/motcamera3.mk)
+#$(call inherit-product, vendor/motorola/MotCamera3/motcamera3.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
@@ -60,7 +60,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 # Signing
-$(call inherit-product, vendor/pixelos-priv/config/common.mk)
+$(call inherit-product, vendor/halcyon-priv/config/common.mk)
 
 # GApps
 $(call inherit-product-if-exists, vendor/google/gms/gms-vendor.mk)
