@@ -161,6 +161,10 @@ vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so
 # FM
 system_ext/app/FMRadioService/FMRadioService.apk
 product/priv-app/FMPlayer/FMPlayer.apk
+vendor/etc/init/init.qti.fm.rc
+vendor/etc/init.qti.fm.sh
+vendor/lib64/motorola.hardware.fmradio@1.0.so
+vendor/bin/hw/motorola.hardware.fmradio@1.0-service
 
 # Graphics (Adreno firmware)
 vendor/firmware/a630_sqe.fw
