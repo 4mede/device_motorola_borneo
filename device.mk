@@ -20,20 +20,6 @@ PRODUCT_COPY_FILES += \
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
 
-# FM
-PRODUCT_PACKAGES += \
-    libqcomfm_jni \
-    qcom.fmradio \
-    motorola.hardware.fmradio
-  
-PRODUCT_BOOT_JARS += qcom.fmradio
-
-PRODUCT_COPY_FILES += \
-     $(call find-copy-subdir-files,*,device/motorola/borneo/prebuilt/permissions,product/etc/permissions)
-
-AB_OTA_PARTITIONS += \
-     product
-
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \

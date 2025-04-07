@@ -158,16 +158,6 @@ vendor/lib64/libets_fp_et5.so
 vendor/lib64/libets_teeclient.so
 vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so
 
-# FM
-vendor/etc/init/init.qti.fm.rc
-vendor/etc/init.qti.fm.sh
-vendor/lib64/motorola.hardware.fmradio@1.0.so
-vendor/bin/hw/motorola.hardware.fmradio@1.0-service
-
-# FM APKs - From vegas V1VE35.22-59-1
-system_ext/app/FMRadioService/FMRadioService.apk|bf1ad65b161121d3bbd04e4e3235fe22567752c5
-product/priv-app/FMPlayer/FMPlayer.apk|e17fab2e0fc683a6f8ebdaec484ea3294e645734
-
 # Graphics (Adreno firmware)
 vendor/firmware/a630_sqe.fw
 
