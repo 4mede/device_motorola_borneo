@@ -21,6 +21,12 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
 
+# Moto Camera 3
+TARGET_MOTCAMERA3 := borneo
+TARGET_USES_MOTCAMERA3 := true
+ 
+$(call inherit-product, vendor/motorola/MotCamera3/motcamera3.mk)
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
