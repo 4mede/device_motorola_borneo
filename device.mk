@@ -18,14 +18,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
 # Boot animation
-TARGET_BOOT_ANIMATION_RES := 720
-
-# Fm
-PRODUCT_PACKAGES += \
-     libqcomfm_jni \
-     qcom.fmradio
- 
- PRODUCT_BOOT_JARS += qcom.fmradio
+TARGET_SCREEN_HEIGHT := 1600
+TARGET_SCREEN_WIDTH := 720
 
 # Init
 PRODUCT_PACKAGES += \
@@ -44,13 +38,6 @@ PRODUCT_PACKAGES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
-
-# Prebuilt
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/motorola/borneo/prebuilt/permissions,product/etc/permissions) \
-
-AB_OTA_PARTITIONS += \
-    product
 
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 29
