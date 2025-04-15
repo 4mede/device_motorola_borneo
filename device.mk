@@ -23,7 +23,6 @@ TARGET_SCREEN_WIDTH := 720
 
 # Init
 PRODUCT_PACKAGES += \
-    fstab.qcom \
     init.oem.fingerprint.sh \
     init.oem.fingerprint2.sh \
     init.mmi.overlay.rc \
@@ -43,10 +42,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 29
 PRODUCT_SHIPPING_API_LEVEL := 29
-
-# Ramdisk
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
