@@ -29,6 +29,10 @@ PRODUCT_PACKAGES += \
     init.mmi.overlay.rc \
     init.recovery.touch.rc
 
+# Lights
+ PRODUCT_PACKAGES += \
+     android.hardware.light-service.lineage
+
 # Moto Camera 3
 #TARGET_MOTCAMERA3 := borneo
 #TARGET_USES_MOTCAMERA3 := true
