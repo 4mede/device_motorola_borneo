@@ -196,7 +196,6 @@ vendor/etc/sensors/config/tmd2755_0.json
 vendor/etc/sensors/sns_reg_config
 
 # Thermal
-vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
 vendor/etc/thermal-engine-borneo.conf
 vendor/etc/thermal-engine.conf
