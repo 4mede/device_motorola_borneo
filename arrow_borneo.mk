@@ -14,6 +14,8 @@ $(call inherit-product, device/motorola/borneo/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/arrow/config/common.mk)
 
+TARGET_BOOT_ANIMATION_RES := 720
+
 # Inherit from ViPER4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
