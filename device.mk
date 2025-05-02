@@ -34,10 +34,10 @@ PRODUCT_PACKAGES += \
      android.hardware.light-service.lineage
 
 # Moto Camera 3
-#TARGET_MOTCAMERA3 := borneo
-#TARGET_USES_MOTCAMERA3 := true
+TARGET_MOTCAMERA3 := borneo
+TARGET_USES_MOTCAMERA3 := true
 
-#$(call inherit-product, vendor/motorola/MotCamera3/motcamera3.mk)
+$(call inherit-product, vendor/motorola/MotCamera3/motcamera3.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
