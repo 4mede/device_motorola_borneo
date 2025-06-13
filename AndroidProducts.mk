@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_borneo.mk
+    $(LOCAL_DIR)/voltage_borneo.mk

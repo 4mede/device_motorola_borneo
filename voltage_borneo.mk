@@ -11,10 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/borneo/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1280
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_borneo
+PRODUCT_NAME := voltage_borneo
 PRODUCT_DEVICE := borneo
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g power (2021)
