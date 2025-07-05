@@ -4,6 +4,9 @@ persist.vendor.audio.fluence.voicecall=false
 persist.vendor.audio.fluence.voicecomm=true
 ro.audio.monitorRotation=true
 
+# Bluetooth
+bluetooth.device.default_name=Motorola Moto G Power (2021)
+
 # Camera
 persist.vendor.camera.physical.num=4
 
