@@ -233,4 +233,6 @@
         <item>30</item>
     </integer-array>
 
+    <!-- MMS user agent string -->
+    <string name="config_mms_user_agent" translatable="false">moto g power (2021)</string>
 </resources>

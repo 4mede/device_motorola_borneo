@@ -39,6 +39,7 @@ PRODUCT_COPY_FILES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
+    WifiResDevice
 
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 29
