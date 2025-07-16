@@ -16,6 +16,9 @@ AB_OTA_PARTITIONS += \
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := borneo
 
+# Broken
+BUILD_BROKEN_DUP_SYSPROP := true
+
 # Display
 TARGET_SCREEN_DENSITY := 280
 
