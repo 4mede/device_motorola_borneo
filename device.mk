@@ -3,6 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+KERNEL_PREBUILT_DIR := $(LOCAL_PATH)-kernel
+
 # Inherit from sm6225-common
 $(call inherit-product, device/motorola/sm6225-common/common.mk)
 
@@ -28,6 +30,11 @@ PRODUCT_PACKAGES += \
     init.oem.fingerprint2.sh \
     init.mmi.overlay.rc \
     init.recovery.touch.rc
+    
+# Kernel
+LOCAL_KERNEL := device/motorola/borneo-kernel/kernel
+PRODUCT_COPY_FILES += \
+	$(LOCAL_KERNEL):kernel
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
