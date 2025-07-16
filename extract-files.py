@@ -22,6 +22,7 @@ from extract_utils.main import (
 namespace_imports = [
     'hardware/motorola',
     'vendor/motorola/sm6225-common',
+    'vendor/qcom/common/vendor/media-legacy'
 ]
 
 lib_fixups: lib_fixups_user_type = {
