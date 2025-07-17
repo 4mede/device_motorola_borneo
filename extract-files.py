@@ -11,6 +11,7 @@ from extract_utils.fixups_blob import (
     blob_fixups_user_type,
 )
 from extract_utils.fixups_lib import (
+    lib_fixup_remove,
     lib_fixups,
     lib_fixups_user_type,
 )
@@ -38,6 +39,9 @@ blob_fixups: blob_fixups_user_type = {
         .binary_regex_replace(b'camera.mot.is.coming.cts', b'vendor.camera.coming.cts'),
     'vendor/lib64/libvidhance.so': blob_fixup()
         .add_needed('libcomparetf2_shim.so'),
+    (
+        'com.motorola.hardware.biometric.fingerprint@1.0'
+    ): lib_fixup_remove,
 }  # fmt: skip
 
 extract_fns: extract_fns_user_type = {
