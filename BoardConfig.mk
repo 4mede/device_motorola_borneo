@@ -33,15 +33,10 @@ BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
 TARGET_PREBUILT_KERNEL := device/motorola/borneo-kernel/kernel
 PRODUCT_COPY_FILES += \
     $(KERNEL_PATH)/dtb.img:$(TARGET_COPY_OUT)/dtb.img \
-    $(KERNEL_PATH)/dtbo.img:$(TARGET_COPY_OUT)/dtbo.img \
-    $(call find-copy-subdir-files,*,$(KERNEL_PATH)/modules/,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
+    $(KERNEL_PATH)/dtbo.img:$(TARGET_COPY_OUT)/dtbo.img
 
 # Fix prebuilt build
 $(shell mkdir -p $(OUT_DIR)/target/product/borneo/obj/KERNEL_OBJ/usr)
-
-# Kernel Modules - Recovery
-BOARD_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
-RECOVERY_KERNEL_MODULES := $(BOARD_RECOVERY_KERNEL_MODULES_LOAD)
 
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 102400000
