@@ -35,6 +35,9 @@ PRODUCT_COPY_FILES += \
 # Fix prebuilt build
 $(shell mkdir -p $(OUT_DIR)/target/product/borneo/obj/KERNEL_OBJ/usr)
 
+# OTA Assert
+TARGET_OTA_ASSERT_DEVICE := borneo
+
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 102400000
 
