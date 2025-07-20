@@ -38,6 +38,9 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcomparetf2_shim.so'),
 }  # fmt: skip
 
+extract_fns: extract_fns_user_type = {
+}
+
 module = ExtractUtilsModule(
     'borneo',
     'motorola',
