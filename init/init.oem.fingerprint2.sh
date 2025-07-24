@@ -78,10 +78,8 @@ fi
 
 if [ $fps == $fps_vendor2 ]; then
     if [ $fps == $FPS_VENDOR_FPC ]; then
-        rmmod fpc1020_mmi
         fps=$FPS_VENDOR_EGIS
     else
-        rmmod ets_fps_mmi
         fps=$FPS_VENDOR_FPC
     fi
     log "- update FPS vendor"
