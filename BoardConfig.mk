@@ -7,7 +7,6 @@
 include device/motorola/sm6225-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/motorola/borneo
-KERNEL_PATH := device/motorola/borneo-kernel
 
 # A/B
 AB_OTA_PARTITIONS += \
@@ -26,14 +25,7 @@ ODM_MANIFEST_F_FILES := $(DEVICE_PATH)/sku/manifest_f.xml
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
-BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
-TARGET_PREBUILT_KERNEL := device/motorola/borneo-kernel/kernel
-PRODUCT_COPY_FILES += \
-    $(KERNEL_PATH)/dtb.img:$(TARGET_COPY_OUT)/dtb.img \
-    $(KERNEL_PATH)/dtbo.img:$(TARGET_COPY_OUT)/dtbo.img
-
-# Fix prebuilt build
-$(shell mkdir -p $(OUT_DIR)/target/product/borneo/obj/KERNEL_OBJ/usr)
+TARGET_KERNEL_CONFIG += vendor/ext_config/borneo-default.config
 
 # OTA Assert
 TARGET_OTA_ASSERT_DEVICE := borneo
