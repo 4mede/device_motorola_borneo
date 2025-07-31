@@ -25,7 +25,7 @@ ODM_MANIFEST_F_FILES := $(DEVICE_PATH)/sku/manifest_f.xml
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
-TARGET_KERNEL_CONFIG := borneo_defconfig
+KERNEL_DEFCONFIG := borneo_defconfig
 
 # OTA Assert
 TARGET_OTA_ASSERT_DEVICE := borneo
