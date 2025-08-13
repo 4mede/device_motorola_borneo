@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/genesis_borneo.mk
+    $(LOCAL_DIR)/sun_borneo.mk
