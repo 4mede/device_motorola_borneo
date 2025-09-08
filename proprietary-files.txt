@@ -227,6 +227,3 @@ vendor/firmware/focaltech-djnboe-ft8009-07-000-borneo.bin:recovery/root/vendor/f
 vendor/firmware/ilitek_fw.bin:recovery/root/vendor/firmware/ilitek_fw.bin
 vendor/firmware/novatek_ts_fw.bin:recovery/root/vendor/firmware/djn_novatek_ts_fw.bin
 vendor/firmware/novatek_ts_mp.bin:recovery/root/vendor/firmware/djn_novatek_ts_mp.bin
-
-# WiFi
-vendor/bin/cnss-daemon
