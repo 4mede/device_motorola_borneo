@@ -29,6 +29,7 @@ MAX_TIMES=20
 
 function ident_fps {
     log "- install FPC driver"
+    insmod /vendor/lib/modules/fpc1020_mmi.ko
     sleep 1
     log "- identify FPC sensor"
     setprop $PROP_FPS_IDENT ""
@@ -51,6 +52,7 @@ function ident_fps {
     done
 
     log "- install Egis driver"
+    insmod /vendor/lib/modules/ets_fps_mmi.ko
     echo $FPS_VENDOR_EGIS > $persist_fps_id
     return 0
 }
@@ -65,11 +67,13 @@ log "FPS vendor: $fps_vendor"
 
 if [ $fps_vendor == $FPS_VENDOR_EGIS ]; then
     log "- install Egis driver"
+    insmod /vendor/lib/modules/ets_fps_mmi.ko
     return $?
 fi
 
 if [ $fps_vendor == $FPS_VENDOR_FPC ]; then
     log "- install FPC driver"
+    insmod /vendor/lib/modules/fpc1020_mmi.ko
     return $?
 fi
 
