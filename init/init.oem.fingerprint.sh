@@ -28,6 +28,7 @@ PROP_FPS_IDENT=vendor.hw.fps.ident
 MAX_TIMES=20
 
 function ident_fps {
+    log "- install FPC driver"
     sleep 1
     log "- identify FPC sensor"
     setprop $PROP_FPS_IDENT ""
@@ -43,10 +44,13 @@ function ident_fps {
             return 0
         elif [ $ident_status == $FPS_VENDOR_NONE ]; then
             log "fail"
+            log "- unload FPC driver"
+            rmmod fpc1020_mmi
             break
         fi
     done
 
+    log "- install Egis driver"
     echo $FPS_VENDOR_EGIS > $persist_fps_id
     return 0
 }
@@ -60,10 +64,12 @@ fps_vendor=$(cat $persist_fps_id)
 log "FPS vendor: $fps_vendor"
 
 if [ $fps_vendor == $FPS_VENDOR_EGIS ]; then
+    log "- install Egis driver"
     return $?
 fi
 
 if [ $fps_vendor == $FPS_VENDOR_FPC ]; then
+    log "- install FPC driver"
     return $?
 fi
 
