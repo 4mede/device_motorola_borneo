@@ -16,7 +16,7 @@ on fs
     insmod /vendor/lib/modules/focaltech_0flash_mmi.ko
     insmod /vendor/lib/modules/qpnp_adaptive_charge.ko
 
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules abov_sar_mmi_overlay audio_snd_soc_aw882xx tps61280
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules abov_sar_mmi_overlay aw882xx_dlkm tps61280
 
 service capsense_reset /system/vendor/bin/capsense_reset
     class core
