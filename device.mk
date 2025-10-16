@@ -61,7 +61,6 @@ PRODUCT_PACKAGES += \
     WifiResDevice
 
 # Shipping API level
-BOARD_SHIPPING_API_LEVEL := 29
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Ramdisk
