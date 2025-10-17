@@ -7,10 +7,6 @@
 include device/motorola/sm6225-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/motorola/borneo
-
-# A/B
-AB_OTA_PARTITIONS += \
-    recovery
     
 # Board Info
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
@@ -23,8 +19,8 @@ TARGET_SCREEN_DENSITY := 280
 
 # HIDL
 ODM_MANIFEST_SKUS += b f
-ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/sku/manifest_b.xml
-ODM_MANIFEST_F_FILES := $(DEVICE_PATH)/sku/manifest_f.xml
+ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/configs/vintf/manifest_b.xml
+ODM_MANIFEST_F_FILES := $(DEVICE_PATH)/configs/vintf/manifest_f.xml
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
@@ -40,8 +36,8 @@ BOARD_SUPER_PARTITION_SIZE := 10027008000
 BOARD_MOTO_DYNAMIC_PARTITIONS_SIZE := 5009309696 # (BOARD_SUPER_PARTITION_SIZE / 2) - 4MB
 
 # Properties
-TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/configs/props/odm.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
 # Recovery
 TARGET_RECOVERY_DENSITY := hdpi
