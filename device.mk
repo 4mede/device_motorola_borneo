@@ -21,10 +21,6 @@ PRODUCT_PACKAGES += \
     libcamera_provider_shim \
     libpiex_shim
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1600
-TARGET_SCREEN_WIDTH := 720
-
 # Display
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_display_power_timer_ms=1000 \
