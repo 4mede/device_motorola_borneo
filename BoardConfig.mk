@@ -17,11 +17,6 @@ TARGET_BOOTLOADER_BOARD_NAME := borneo
 # Display
 TARGET_SCREEN_DENSITY := 280
 
-# HIDL
-ODM_MANIFEST_SKUS += b f
-ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/configs/vintf/manifest_b.xml
-ODM_MANIFEST_F_FILES := $(DEVICE_PATH)/configs/vintf/manifest_f.xml
-
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
 KERNEL_DEFCONFIG := borneo_defconfig
@@ -50,6 +45,11 @@ VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # Verified Boot
 BOARD_AVB_ROLLBACK_INDEX := 20
+
+# Vintf
+ODM_MANIFEST_SKUS += b f
+ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/configs/vintf/manifest_b.xml
+ODM_MANIFEST_F_FILES := $(DEVICE_PATH)/configs/vintf/manifest_f.xml
 
 # Inherit from the proprietary version
 include vendor/motorola/borneo/BoardConfigVendor.mk
