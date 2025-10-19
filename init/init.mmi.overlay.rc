@@ -3,7 +3,6 @@ on mmi-priority
     # For instance, sensor_class referenced from several DLKMs
     # and needs to load first. Touchscreen might need extra time
     # to perform firmware update if necessary
-    setprop vendor.mmi_init.stage priority
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules mmi_annotate mmi_info mmi_sys_temp sensors_class mcDrvModule
 
 on fs
