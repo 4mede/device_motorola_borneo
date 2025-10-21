@@ -1,5 +1,5 @@
 //
-// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-FileCopyrightText: The LineageOS Project, Paranoid Android
 // SPDX-License-Identifier: Apache-2.0
 //
 
@@ -32,5 +32,12 @@ sh_binary {
 sh_binary {
     name: "init.oem.fingerprint2.sh",
     src: "init.oem.fingerprint2.sh",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.device.rc",
+    src: "init.device.rc",
+    sub_dir: "init/hw",
     vendor: true,
 }

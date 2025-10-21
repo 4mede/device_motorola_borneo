@@ -1,5 +1,5 @@
 #
-# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-FileCopyrightText: The LineageOS Project, Paranoid Android
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -11,6 +11,9 @@ DEVICE_PATH := device/motorola/borneo
 # A/B
 AB_OTA_PARTITIONS += \
     recovery
+    
+# Board Info
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := borneo
