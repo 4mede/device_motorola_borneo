@@ -8,10 +8,6 @@ bluetooth.device.default_name=Motorola Moto G Power (2021)
 # Camera
 persist.vendor.camera.physical.num=4
 
-# Display
-ro.surface_flinger.set_idle_timer_ms=0
-ro.surface_flinger.set_touch_timer_ms=0
-
 # Keymaster
 ro.hardware.keystore_desede=true
 
