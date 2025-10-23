@@ -16,10 +16,23 @@ AB_OTA_PARTITIONS += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
     
+PRODUCT_ODM_PROPERTIES += \   
+    persist.vendor.audio.fluence.voicecall=false
+
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.audio.dualmic.config=endfire \
+    ro.audio.monitorRotation=true
+
+PRODUCT_VENDOR_PROPERTIES += \
+    bluetooth.device.default_name=Motorola Moto G Power (2021)
+    
 # Camera
 PRODUCT_PACKAGES += \
     libcamera_provider_shim \
     libpiex_shim
+  
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.camera.physical.num=4
 
 # Display
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
@@ -36,6 +49,10 @@ PRODUCT_PACKAGES += \
     init.oem.fingerprint2.sh \
     init.mmi.overlay.rc \
     init.recovery.touch.rc
+    
+# Keymaster
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.hardware.keystore_desede=true
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -56,6 +73,10 @@ PRODUCT_PACKAGES += \
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
+
+# Radio
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.radio.imei.sv=33
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
