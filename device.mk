@@ -41,10 +41,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
     
-# Media
-PRODUCT_ODM_PROPERTIES += \
-    media.settings.xml=/vendor/etc/media_profiles.xml
-
 # Moto Camera 4
 TARGET_MOTCAMERA3 := borneo
 TARGET_USES_MOTCAMERA3 := true
